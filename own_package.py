@@ -36,7 +36,7 @@ if __name__ == "__main__":
      choice = ''
      while (choice != '0'):
          menu_options()
-         choice = input('Select from the options above: ')
+         choice = str(input('Select from the options above: '))
          print ('\n-------------------------------------------------------------------')
          print ('\n')
          
@@ -61,18 +61,11 @@ if __name__ == "__main__":
              print ('*******************************************************************\n')
              
          elif (choice == '4'):
-             my_columns = [["destination" , "price"]]
-             package_min = input('Enter the LOWEST amount you are willing to pay: ')
-             package_max = input('Enter the HIGHEST amount you are willing to pay: ')
-             print (my_columns[[int("price")]] >= int(package_min)[[int("price")]] <= int(package_max))             
-         # THIS IS THE 2ND OPTION I HAVE TRIED WITHOUT SUCCESS :((   
-         #elif (choice == '4'):
-             #package_min = input ('Enter the LOWEST amount you are willing to pay: ')
-             #package_max = input ('Enter the HIGHEST amount you are willing to pay: ')
-             #print (int(package[3][price]),int(package[4][price]),int(package[5][price]),
-                     #int(package[6][price]) >= int(package_min))
-             #print ('\n')
-             #print ('*******************************************************************\n')
+             package_min = int(input('Enter the LOWEST amount you are willing to pay: '))
+             package_max = int(input('Enter the HIGHEST amount you are willing to pay: '))
+             for i in range(len(package)):
+                 if package[i][2] >= package_min and package[i][2] <= package_max:
+                     print package[i][1], package[i][2]
          elif (choice == '6'):
              print ('TOTAL FOR ALL PACKAGES:\n')
              print ("$", package[0][price] + package[1][price] + package[2][price] + package[3][price] +
