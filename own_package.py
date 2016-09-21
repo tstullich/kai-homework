@@ -66,6 +66,7 @@ if __name__ == "__main__":
              for i in range(len(package)):
                  if package[i][2] >= package_min and package[i][2] <= package_max:
                      print package[i][1], package[i][2]
+
          elif (choice == '6'):
              print ('TOTAL FOR ALL PACKAGES:\n')
              print ("$", package[0][price] + package[1][price] + package[2][price] + package[3][price] +
