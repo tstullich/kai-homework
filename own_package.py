@@ -78,6 +78,7 @@ if __name__ == "__main__":
             print ('END OF PROGRAM.......END OF PROGRAM')
             print ('END OF PROGRAM.......END OF PROGRAM')
             print ('END OF PROGRAM.......END OF PROGRAM')
+            print ('END OF PROGRAM.......END OF PROGRAM')
             
          else:
             print ('INVALID INPUT; DOUBLE-CHECK YOUR SELECTION')
